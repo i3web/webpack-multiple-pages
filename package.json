@@ -1,0 +1,35 @@
+{
+  "name": "mp",
+  "version": "1.0.0",
+  "description": "multiple page es6",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=dev && webpack-dev-server --open",
+    "build": "cross-env NODE_ENV=prod && webpack -p",
+    "lint": "cross-env NODE_ENV=lint && webpack-dev-server --open",
+    "server": "http-server ./dist -p 8888 -o",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.3",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "clean-webpack-plugin": "^0.1.16",
+    "cross-env": "^5.1.4",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.6.1",
+    "eslint-loader": "^1.9.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "file-loader": "^0.11.2",
+    "html-webpack-plugin": "^2.30.1",
+    "postcss-loader": "^2.0.6",
+    "style-loader": "^0.18.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.7.1",
+    "webpack-merge": "^4.1.0"
+  }
+}
