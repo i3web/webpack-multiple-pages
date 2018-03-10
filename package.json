@@ -4,7 +4,7 @@
   "description": "multiple page es6",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_ENV=dev && webpack-dev-server --open",
+    "dev": "cross-env NODE_ENV=dev && webpack-dev-server --open",
     "build": "cross-env NODE_ENV=prod && webpack -p",
     "lint": "cross-env NODE_ENV=lint && webpack-dev-server --open",
     "server": "http-server ./dist -p 8888 -o",
