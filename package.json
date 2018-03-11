@@ -4,8 +4,8 @@
   "description": "multiple page es6",
   "main": "index.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev && webpack-dev-server --open",
-    "build": "cross-env NODE_ENV=prod && webpack -p",
+    "dev": "cross-env NODE_ENV=dev && webpack-dev-server --config ./config/webpack.config.dev.js --open",
+    "build": "cross-env NODE_ENV=prod && webpack --config ./config/webpack.config.prod.js -p",
     "lint": "cross-env NODE_ENV=lint && webpack-dev-server --open",
     "server": "http-server ./dist -p 8888 -o",
     "test": "echo \"Error: no test specified\" && exit 1"
